@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <table>
+    <thead>
+      <tr>
+        <th>nro</th>
+      <th>descripcion del Problema</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let soli of solicitudes">
+        <td>{{soli.seq_solicitud}}</td>
+        <td>{{soli.descripcionProblema}}</td>
+      </tr>
+    </tbody>
+  </table>
+</ion-content>
